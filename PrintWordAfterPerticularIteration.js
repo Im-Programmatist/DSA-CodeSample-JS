@@ -17,6 +17,6 @@ for (let i = 0; i < 50; i++) {
 for(let i=0; i < 100; i++){
     let h = i%3 === 0 ,
     w = i%5 === 0 ;
-    console.log(`${h?(w?str1+str2:str2):w?str1:i}`);
+    console.log(`${h?(w?str1+str2:str1):w?str2:i}`);
 }
 

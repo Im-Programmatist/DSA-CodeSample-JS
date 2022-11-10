@@ -8,5 +8,16 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Im-Programmatist/DSA-CodeSample-JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Im-Programmatist/DSA-CodeSample-JS/issues"
+  },
+  "homepage": "https://github.com/Im-Programmatist/DSA-CodeSample-JS#readme",
+  "dependencies": {
+    "prompt": "^1.3.0"
+  }
 }

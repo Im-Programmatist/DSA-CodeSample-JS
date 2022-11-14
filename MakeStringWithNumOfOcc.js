@@ -45,3 +45,13 @@ const givenStr = "abcadebcsdggbefgee";
     }
     console.log(`Result of array item occurrence from ${givenArr} is - ${JSON.stringify(resultObj)}`);
 })(givenArr);
+
+
+for (let i = 0; i < givenArr.length; i++) {
+    if (string[i] == string[i + 1]) {
+        counter++;
+    } else {
+        resultString2 += string[i]+counter+" ";
+        counter = 1;
+    }
+}

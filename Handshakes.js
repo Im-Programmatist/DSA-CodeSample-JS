@@ -38,8 +38,8 @@ for you how many choices are there, off course you can not do handshake with you
 for we may have function which reduce the number by one till come to zero, 
 for that we will make function and call it in loop or best way to use it in 'Recursion'
 */
-//Using recursion -->
 
+//Using recursion -->
 const handshakeRec = (n) => {
     if(n==0)
         return 0;

@@ -47,11 +47,11 @@ const givenStr = "abcadebcsdggbefgee";
 })(givenArr);
 
 
-for (let i = 0; i < givenArr.length; i++) {
-    if (string[i] == string[i + 1]) {
-        counter++;
-    } else {
-        resultString2 += string[i]+counter+" ";
-        counter = 1;
-    }
-}
+// for (let i = 0; i < givenArr.length; i++) {
+//     if (string[i] == string[i + 1]) {
+//         counter++;
+//     } else {
+//         resultString2 += string[i]+counter+" ";
+//         counter = 1;
+//     }
+// }

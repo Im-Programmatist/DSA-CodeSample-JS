@@ -25,6 +25,27 @@ for(let i = 0; i <arr.length; i++) {
 }
 console.log(`Array ${arr} has duplicate element,\n here is the count of each element\n ${resString}`); 
 
-
-
+const a = ['g', 'a', 'b', 'c', 'd', 'e', 'f', 'a', 'a', 'c', 'e', 'g']
+var resSort = [];
+let stringSort = '';
+for(let i = 0; i < a.length; i++){
+    let count = 0;
+    for(let j = 0; j < a.length; j++){
+        if(a[i]==a[j] && i>j){
+            break;
+        }
+        if(a[i]==a[j]){
+            count++;
+        }
+        if(a[i]==a[j] && !resSort.includes(a[i])){
+            resSort.push(a[i]);
+        }
+    }
+    if(count>0){
+        stringSort = stringSort+` ${a[i]}${count}`;
+        console.log(`The element ${a[i]} is repeated in ${count} times.`);
+    }      
+}
+console.log(resSort);
+console.log(stringSort);
 

@@ -15,7 +15,7 @@ for you how many choices are there, off course you can not do handshake with you
 *** we are counting handshakes not individuals handshakes
 
 --> 1. first obvious thing is, skip last person, don't count him in calculation
-       suppose 5 people are there then only 4 people have chance of handshake
+       suppose 5 people are there then only  4 people have  chance to initiate handshake
        which is out of n have (n-1) chances
 --> 2. suppose n people are there then for individuals have (n-1) handshakes 
        5 people, do 5x4 = 20 handshakes(individually)

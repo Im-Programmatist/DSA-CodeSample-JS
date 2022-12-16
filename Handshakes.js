@@ -21,7 +21,7 @@ for you how many choices are there, off course you can not do handshake with you
        5 people, do 5x4 = 20 handshakes(individually) but we are not counting for individuals
 
 --> 3. as the first person handshakes with other one possibility of handshakes reduce and 
-       in second person chance possibility of handshakes reduces by 2 for third person possibility reduce by 3 and so on
+       in second person's chance possibility of handshakes reduces by 2, for third person possibility reduce by 3 and so on
        
     total handshakes  = (n-1) + (n-2) + (n-3) + (n-4) + 0(skip last person)
            

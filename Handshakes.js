@@ -1,6 +1,6 @@
 /*
-**logic -  suppose there are 5 people doing handshakes & you are one of them start with you, 
-for you how many choices are there 4, off course you can not do handshake with your self.
+**Scenario -  suppose there are 5 people doing handshakes & you are one of them start with you, 
+for you how many choices are there, off course you can not do handshake with your self  - it's 4.
 
 1. For you out of 5, 4 people available, handshakes - 4 
 2. at the time of first handshake for that next person, possibility of handshakes with you ends as you have done handshake already

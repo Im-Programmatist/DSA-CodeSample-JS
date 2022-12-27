@@ -1,59 +1,34 @@
 /**
- * Median of two SORTED arrays
- * Input nums1 = [1,2] nums2 = [3,4] then output would be 2.5 as median and array [1,2,3,4] 
+ * Regular Expression Matching
+ * given input string s and pattern to match is p,
+ * implement regular expression matching with support for '*' & '.' where:
+ * '.' - matches any single character
+ * '*' - Matches zero or more of the preceding element(same char/element)
+ * Matching should consider & cover entire input string not partial(do not stop on first occurrence)
+ * Input s = "aa"; p="a" 
+ * OUTPUT - false (a does not match the entire string 'a');
+ * Input s = "aa"; p="a*" 
+ * OUTPUT - true (* means zero or more preceding elements will come to match, it may become aa);
+ * Input s = "ab"; p=".*" 
+ * OUTPUT - true (.* means zero or more * of any character(.)
+ * Both contain lower case latters, it is must that * means previous valid char
 */
 
-(
-    medianOfTwoSortedArray = (numArr1, numArr2) =>{
-        
-        let resultArray = [];
-        let numArr1Length = numArr1.length;
-        let numArr2Length = numArr2.length;   
-        let totalLengthOfResultArr = numArr1Length + numArr2Length;
-        let halfLengthOfResultArr = Math.ceil(totalLengthOfResultArr+1/2);     
-
-        if(totalLengthOfResultArr==0)
-            return console.log('Both array are empty!');
-        
-        //First merged array with sorting on both array 
-        //for sorting we can use binary search
-        //The binary search is reduce computation complexity by iteration only though half of array. 
-        let i = 0 , j = 0, k = 1;
-        while(k < halfLengthOfResultArr){
-            if(i<numArr1Length && j<numArr2Length){
-                if(numArr1[i] == numArr2[j] || numArr1[i]<numArr2[j]){
-                    console.log('if if',numArr1[i]);
-                    resultArray.push(numArr1[i]);
-                    i++;
-                }else{
-                    console.log('if else',numArr2[j]);
-                    resultArray.push(numArr2[j]);
-                    j++;
-                }
-            }
-            else if(i>=numArr1Length){
-                console.log('else if 1',numArr2[j]);
-                resultArray.push(numArr2[j]);
-                j++;
-            }else if(j>=numArr2Length){
-                console.log('else if 2',numArr1[i]);
-                resultArray.push(numArr1[i]);
-                i++;
-            }else{
-                console.log('inside else');
-            }
-            k++;
-        }
-        console.log(resultArray);
-        console.log(`
-        ${resultArray[resultArray.length/2]}, ${resultArray[resultArray.length/2-1]}, 
-            The median of the results array is ${
-                resultArray.length%2==0 ? 
-                ((resultArray[resultArray.length/2]+resultArray[resultArray.length/2-1])/2) : 
-                (resultArray[Math.ceil(resultArray.length/2)-1])
-            }
-        `);
-       
+(regularExpressionMatching = (num) => {
+    for(var i =0; i<3; i ++){
+        setTimeout(() => {
+            console.log(`i - `, i);
+        },0);
+        const prom = new Promise((resolve, reject) => {
+            resolve('test resolve');
+        });
+    
+        prom.then((res) => {console.log(`1. then`,i);})
+        .catch((err) => {console.log(`1. catch`,i);})
+        .then(() => {console.log(`2. then`,i);})
+        .then(() =>{console.log(`3. then`,i);})
+        .catch((err) =>{console.log(`2. catch`,i);})
+        console.log(`out i - `, i);
     }
-)([1,2,3,4], [6,7,8]) //Array Must be Sorted
 
+})('aa'); 

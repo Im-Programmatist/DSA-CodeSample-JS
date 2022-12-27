@@ -45,15 +45,18 @@
             k++;
         }
         console.log(resultArray);
-        console.log(`
-        ${resultArray[resultArray.length/2]}, ${resultArray[resultArray.length/2-1]}, 
-            The median of the results array is ${
-                resultArray.length%2==0 ? 
-                ((resultArray[resultArray.length/2]+resultArray[resultArray.length/2-1])/2) : 
+        if(resultArray.length%2==0)
+            console.log(`The median of the results array is ${resultArray[resultArray.length/2]} ${resultArray[resultArray.length/2-1]}`);
+        else
+            console.log(`The median of the results array is ${resultArray[Math.ceil(resultArray.length/2)]} ${resultArray[Math.ceil(resultArray.length/2-2)]}\n`);
+        
+        console.log(`The median of the results array is ${
+                resultArray.length%2==0 ?
+                ((resultArray[resultArray.length/2]+resultArray[resultArray.length/2-1])/2) :
                 (resultArray[Math.ceil(resultArray.length/2)-1])
             }
         `);
        
     }
-)([1,2,3,4], [6,7,8]) //Array Must be Sorted
+)([1,2,3,4,5], [6,7,8,9,10,11,12,13]) //Array Must be Sorted
 

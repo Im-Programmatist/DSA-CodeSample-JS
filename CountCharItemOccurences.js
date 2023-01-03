@@ -31,3 +31,27 @@ findOcc('abcadebcsdggbefgee','g');
         console.log(res);
     }
 )('this is string');
+
+function mostFrequent(arr) {
+    let maxCount = -1,
+      maxItem = null,
+      count = {};
+    for (let i of arr) {
+      if (!count.hasOwnProperty(i)) count[i] = 1;
+      else count[i] += 1;
+      if (count[i] > maxCount) {
+        maxCount = count[i];
+        maxItem = i;
+      }
+    }
+    return maxItem;
+  }
+  const freq = mostFrequent([1, 3, 2, 1, 4, 1,3,2,3,4,2,5,2]);
+  console.log(`Max frequency of elements: ${freq}`);
+
+  setTimeout(function() {
+    console.log('setTimeout')
+  }, 0);
+  setImmediate(function() {
+    console.log('setImmediate')
+  });

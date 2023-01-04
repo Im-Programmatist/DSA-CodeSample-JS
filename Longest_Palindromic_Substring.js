@@ -1,5 +1,7 @@
 (
     longestPalindromicSubstring = (string)=>{
+
+        /*Own logic*/
         let lenString = string.length;
         let resultStr = "";
         let resultStrArr = [];
@@ -22,23 +24,20 @@
             return n; // if string is empty then size will be 0.
                     // if n==1 then, answer will be 1(single
                     // character will always palindrome)
-  
         let maxLength = 1,start=0;
         let low, high;
         for (let i = 0; i < n; i++) {
             low = i - 1;
             high = i + 1;
+
             while ( high < n && string[high] == string[i]) //increment 'high'                                
                 high++;
-        
             while ( low >= 0 && string[low] == string[i]) // decrement 'low'                
                 low--;
-        
             while (low >= 0 && high < n && string[low] == string[high]){
                 low--;
                 high++;
             }
-    
             let length = high - low - 1;
             if (maxLength < length) {
                 maxLength = length;
@@ -48,4 +47,4 @@
         console.log(`low ${low} high ${high} start ${start} maxLength ${maxLength}`);
         console.log(`Longest palindrome substring is:${string.substring(start,maxLength+start)} & max length is ${maxLength}`);
     }
-)('abcddcb');
+)('abcdcb');

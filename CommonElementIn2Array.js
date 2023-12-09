@@ -11,7 +11,6 @@
 
         var p1 = 0, p2 = 0, resArr2 = [];
         while(p1 < arr1.length && p2 < arr2.length) {
-            console.log(arr1[p1],arr2[p2]);
             if(arr1[p1]==arr2[p2]){
                 resArr2.push(arr1[p1]);
                 p1++;p2++;
@@ -23,6 +22,5 @@
             }
         }
         console.log('Result Array 2 - ',resArr2);
-
     }
 )([1,2,3,4,5,6],[5,6,7,8,9,10,4]);

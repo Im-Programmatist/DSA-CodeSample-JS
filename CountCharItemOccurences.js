@@ -48,10 +48,3 @@ function mostFrequent(arr) {
   }
   const freq = mostFrequent([1, 3, 2, 1, 4, 1,3,2,3,4,2,5,2]);
   console.log(`Max frequency of elements: ${freq}`);
-
-  setTimeout(function() {
-    console.log('setTimeout')
-  }, 0);
-  setImmediate(function() {
-    console.log('setImmediate')
-  });

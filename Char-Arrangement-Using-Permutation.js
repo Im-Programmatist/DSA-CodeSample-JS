@@ -9,9 +9,7 @@ const permutator = (inputArr) => {
 				//if(i==1){
 				let curr = arr.slice(); // just to convert incoming argument to an array -> return array as it is 
 				let next = curr.splice(i, 1); // remove first element, if arr.splice() then return empty array
-				console.log('i', i, next);
-				permute(curr.slice(), m.concat(next));
-				
+				permute(curr.slice(), m.concat(next));				
 				//}
 			}
 		}

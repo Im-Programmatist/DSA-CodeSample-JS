@@ -13,3 +13,13 @@ prompt.get(['number'], function (err, result) {
         n2 = fibonacci;
     }
 });
+
+function fibonacci(numTerms){
+    let sequence = [0, 1]; 
+    while (sequence.length < numTerms) { 
+        let nextNumber = sequence[sequence.length - 1] + sequence[sequence.length - 2]; 
+        sequence.push(nextNumber); 
+    } 
+    return sequence
+}
+console.log("Fibonacci number - "+sequence);
